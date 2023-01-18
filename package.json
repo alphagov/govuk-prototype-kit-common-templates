@@ -1,5 +1,5 @@
 {
-  "name": "govuk-prototype-kit-templates",
+  "name": "@govuk-prototype-kit/templates",
   "version": "1.0.0",
   "description": "Common service page templates for the GOV.UK Prototype Kit",
   "author": "GOV.UK Prototype team, UK Government Digital Service",
