@@ -1,0 +1,6 @@
+.DS_Store
+.tmuxp.*
+.idea
+
+node_modules
+*.tgz
