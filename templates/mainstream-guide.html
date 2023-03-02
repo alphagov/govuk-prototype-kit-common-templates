@@ -10,19 +10,23 @@
 {% endblock %}
 
 {% block beforeContent %}
-  <div class="govuk-breadcrumbs">
-    <ol class="govuk-breadcrumbs__list">
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="#">Section</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link">Subsection</a>
-      </li>
-    </ol>
-  </div>
+
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "#"
+      },
+      {
+        text: "Section",
+        href: "#"
+      },
+      {
+        text: "Subsection"
+      }
+    ]
+  }) }}
+
 {% endblock %}
 
 {% block content %}
@@ -71,41 +75,17 @@
       <p>Content goes here.</p>
 
       <nav class="govuk-prototype-kit-common-templates-pagination" role="navigation" aria-label="Pagination">
-        <ul class="govuk-prototype-kit-common-templates-pagination__list">
-          <li class="govuk-prototype-kit-common-templates-pagination__item govuk-prototype-kit-common-templates-pagination__item--previous">
-            <a href="#" class="govuk-link govuk-prototype-kit-common-templates-pagination__link" rel="prev">
-              <span class="govuk-prototype-kit-common-templates-pagination__link-title">
-                <svg class="govuk-prototype-kit-common-templates-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
-                  <path d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
-                </svg>
-                <span class="govuk-prototype-kit-common-templates-pagination__link-text">
-                  Previous
-                </span>
-              </span>
-              <span class="govuk-prototype-kit-common-templates-pagination__link-divider visually-hidden">:</span>
-              <span class="govuk-prototype-kit-common-templates-pagination__link-label">
-                Page 1 title
-              </span>
-            </a>
-          </li>
-          <li class="govuk-prototype-kit-common-templates-pagination__item govuk-prototype-kit-common-templates-pagination__item--next">
-            <a href="#" class="govuk-link govuk-prototype-kit-common-templates-pagination__link" rel="next">
-              <span class="govuk-prototype-kit-common-templates-pagination__link-title">
-                <svg class="govuk-prototype-kit-common-templates-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
-                  <path d="m10.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
-                </svg>
-                <span class="govuk-prototype-kit-common-templates-pagination__link-text">
-                  Next
-                </span>
-              </span>
-              <span class="govuk-prototype-kit-common-templates-pagination__link-divider visually-hidden">:</span>
-              <span class="govuk-prototype-kit-common-templates-pagination__link-label">
-                Page 3 title
-              </span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+
+      {{ govukPagination({
+        previous: {
+          labelText: "Page 1 title",
+          href: "#"
+        },
+        next: {
+          labelText: "Page 3 title",
+          href: "#"
+        }
+      }) }}
 
       <p>
         <a href="#">
