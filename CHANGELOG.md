@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Fixes
+
+- [#14 - Remove pagination scss from plug-in config as the file has been removed](https://github.com/alphagov/govuk-prototype-kit-common-templates/pull/14)
+
 ## 1.1.0
 
 ### Fixes
