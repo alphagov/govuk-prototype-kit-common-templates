@@ -2,7 +2,6 @@
   "sass": [
     "/sass/_contents-list.scss",
     "/sass/_mainstream-guide.scss",
-    "/sass/_pagination.scss",
     "/sass/_related-items.scss"
   ],
   "templates": [
