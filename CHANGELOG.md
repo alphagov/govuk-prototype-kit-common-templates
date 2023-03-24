@@ -2,9 +2,11 @@
 
 ## Unreleased
 
+## 1.1.0
+
 ### Fixes
 
- - [#11 - Use Nunjucks for all components, improve HTML formatting](https://github.com/alphagov/govuk-prototype-kit-common-templates/pull/11)
+- [#11 - Use Nunjucks for all components, improve HTML formatting](https://github.com/alphagov/govuk-prototype-kit-common-templates/pull/11)
 
 - [#6 Improve check answers](https://github.com/alphagov/govuk-prototype-kit-common-templates/pull/6/files)  
 Use nunjucks instead of html.  
@@ -15,5 +17,6 @@ Use a simpler list, not 2 lists with headings.
 Simplifies the placeholder text.  
 Uses 'path' instead of 'url'.
 
+## 1.0.0
 
 Create plugin
