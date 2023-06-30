@@ -1,4 +1,5 @@
 {
+  "pluginDependencies": ["govuk-frontend"],
   "sass": [
     "/sass/_contents-list.scss",
     "/sass/_mainstream-guide.scss",
