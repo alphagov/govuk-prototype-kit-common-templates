@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## 1.2.1
+
+### Fixes
+
+- [#21 - Using earliest supported version for plugin dependency](https://github.com/alphagov/govuk-prototype-kit-common-templates/pull/21)
+
 ## 1.2.0
 
 ### New features
