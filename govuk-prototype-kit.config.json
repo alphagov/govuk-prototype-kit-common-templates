@@ -1,5 +1,8 @@
 {
-  "pluginDependencies": ["govuk-frontend"],
+  "pluginDependencies": [{
+    "packageName": "govuk-frontend",
+    "minVersion": "4.4.0"
+  }],
   "sass": [
     "/sass/_contents-list.scss",
     "/sass/_mainstream-guide.scss",
