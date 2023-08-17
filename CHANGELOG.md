@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## 1.2.2
+
+### Fixes
+
+- [#24 - Added meta config to be shown on plugin pages](https://github.com/alphagov/govuk-prototype-kit-common-templates/pull/24)
+
 ## 1.2.1
 
 ### Fixes
