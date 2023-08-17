@@ -1,4 +1,10 @@
 {
+  "meta": {
+    "description": "This plugin provides common service page templates for the GOV.UK Prototype Kit.",
+    "urls": {
+      "versionHistory": "https://github.com/alphagov/govuk-prototype-kit-common-templates/releases"
+    }
+  },
   "pluginDependencies": [{
     "packageName": "govuk-frontend",
     "minVersion": "4.4.0"
