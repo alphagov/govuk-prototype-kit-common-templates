@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- [#26 - Add task list page template](https://github.com/alphagov/govuk-prototype-kit-common-templates/pull/26)
+
 ## 1.2.2
 
 ### Fixes
