@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 2.0.1
+
 - [#28 - Fix the task list template to use the correct status tag options](https://github.com/alphagov/govuk-prototype-kit-common-templates/pull/28)
 
 ## 2.0.0
