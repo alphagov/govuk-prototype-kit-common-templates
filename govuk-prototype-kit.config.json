@@ -7,7 +7,7 @@
   },
   "pluginDependencies": [{
     "packageName": "govuk-frontend",
-    "minVersion": "5.0.0"
+    "minVersion": "6.0.0"
   }],
   "sass": [
     "/sass/_contents-list.scss",
