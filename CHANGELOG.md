@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 3.0.0
+
 ### Breaking changes
 
 - [#33 - Support GOV.UK Frontend 6.0](https://github.com/alphagov/govuk-prototype-kit-common-templates/pull/33)
