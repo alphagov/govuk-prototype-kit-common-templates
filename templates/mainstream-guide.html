@@ -4,13 +4,14 @@
   Mainstream guide example
 {% endblock %}
 
+{# Blank header with no service name for this page #}
 {% block header %}
-  <!-- Blank header with no service name for this page -->
-  {{ govukHeader() }}
+  <header>
+    {{govukHeader()}}
+  </header>
 {% endblock %}
 
-{% block beforeContent %}
-
+{% block containerStart %}
   {{ govukBreadcrumbs({
     items: [
       {
@@ -26,7 +27,6 @@
       }
     ]
   }) }}
-
 {% endblock %}
 
 {% block content %}
