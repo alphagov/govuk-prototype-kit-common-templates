@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Fixes
+
+- [#36 - Use functional colours if they're available](https://github.com/alphagov/govuk-prototype-kit-common-templates/pull/36)
+
 ## 3.0.0
 
 ### Breaking changes
