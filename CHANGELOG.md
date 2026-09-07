@@ -5,6 +5,7 @@
 ### Fixes
 
 - [#36 - Use functional colours if they're available](https://github.com/alphagov/govuk-prototype-kit-common-templates/pull/36)
+- [#37 - Update Start page content with more up-to-date example](https://github.com/alphagov/govuk-prototype-kit-common-templates/pull/37)
 
 ## 3.0.0
 
