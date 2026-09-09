@@ -1,4 +1,4 @@
-# Releasing a new version of the prototype kit
+# Releasing a new version
 
 1. Checkout main and pull latest changes.
 
