@@ -39,27 +39,29 @@ v8.0.0 // After implementing backwards incompatible changes
 
 6. Update the version number in [package.json](../../package.json).
 
-7. Run `npm install` to update `package-lock.json`.
+7. Run `nvm use` to use the correct version of Node.js.
 
-8. Commit your changes and open a new pull request on GitHub - copy the release notes into the description.
+8. Run `npm install` to update `package-lock.json`.
 
-9. Once someone has merged the pull request, [draft a new release on GitHub](https://github.com/alphagov/govuk-prototype-kit-templates/releases)
+9. Commit your changes and open a new pull request on GitHub - copy the release notes into the description.
 
-10. In Tag version and Release title, put v[version number], for example `v7.0.0`.
+10. Once someone has merged the pull request, [draft a new release on GitHub](https://github.com/alphagov/govuk-prototype-kit-templates/releases)
 
-11. In the description, paste the relevant section from the release notes in the Google Doc.
+11. In Tag version and Release title, put v[version number], for example `v7.0.0`.
 
-12. Checkout the *main* branch and pull the latest changes.
+12. In the description, paste the relevant section from the release notes in the Google Doc.
 
-13. Sign in to npm (`npm login`), using the credentials for the govuk-prototype-kit npm user from Bitwarden.
+13. Checkout the *main* branch and pull the latest changes.
 
-14. Run `npm publish` and enter the one-time password when prompted.
+14. Sign in to npm (`npm login`), using the credentials for the govuk-prototype-kit npm user from Bitwarden.
 
-15. Run `npm logout` to log out from npm.
+15. Run `npm publish` and enter the one-time password when prompted.
 
-16. On GitHub, click 'Publish release'.
+16. Run `npm logout` to log out from npm.
 
-17. Let the community know about the release
+17. On GitHub, click 'Publish release'.
+
+18. Let the community know about the release
 
 Write a brief summary with highlights from the release then send it to the following slack channels:
 
