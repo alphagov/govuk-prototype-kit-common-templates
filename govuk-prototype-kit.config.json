@@ -56,7 +56,7 @@
       "type":  "nunjucks"
     },
     {
-      "name": "Task list page (for GOV.UK Frontend >=5.0.0)",
+      "name": "Task list page",
       "path": "/templates/task-list.html",
       "type":  "nunjucks"
     }]
