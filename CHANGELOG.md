@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+### Breaking changes
+
+#### This is a test
+
+We are checking if our new release process correctly updates the changelog.
+
 ## 3.0.1
 
 ### Fixes
