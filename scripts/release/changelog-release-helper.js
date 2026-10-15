@@ -50,23 +50,17 @@ function updateChangelog (path, newVersion, previousVersion) {
       `> Use this release to prepare for the changes coming in version \`${removePrereleaseFlag(validatedNewVersion)}\`.`,
       ''
     )
-    // Add content for installing pre-releases
+    // Prereleases are published under the `next` npm tag, so they need to be installed via CLI
     newLines.push(
-      'To install this version in an existing prototype:',
+      'To install this version in a prototype, navigate to your prototype folder in a terminal and run:',
       '',
-      `- navigate to your prototype folder in a terminal and run the command: \`npm install govuk-prototype-kit@${validatedNewVersion}\``,
-      '',
-      'To create new prototypes with this version:',
-      '',
-      '1. Create a new folder for your prototype in a terminal.',
-      '2. Navigate to your prototype folder.',
-      `3. Run the command \`npx govuk-prototype-kit@${validatedNewVersion} create --version ${validatedNewVersion}\`.`,
+      `\`npm install @govuk-prototype-kit/common-templates@${validatedNewVersion}\``,
       ''
     )
   } else {
     // Add content on how to install the release
     newLines.push(
-      'You can find [how to update to the latest version](https://prototype-kit.service.gov.uk/update-to-latest-version/) in our documentation.',
+      'You can update to this version from the [Plugins section of Manage your prototype](http://localhost:3000/manage-prototype/plugins) in your prototype.',
       ''
     )
   }
@@ -114,7 +108,7 @@ function generateReleaseNotes (path, newVersion, options) {
   if (options && options.actor && options.runId) {
     releaseNotes.push('')
     releaseNotes.push(
-      `Pull request generated on behalf of @${options.actor} by [run ${options.runId}](https://github.com/alphagov/govuk-prototype-kit/actions/runs/${options.runId}) of the [Build release workflow](https://github.com/alphagov/govuk-prototype-kit/actions/workflows/build-release.yml)`
+      `Pull request generated on behalf of @${options.actor} by [run ${options.runId}](https://github.com/alphagov/govuk-prototype-kit-common-templates/actions/runs/${options.runId}) of the [Build release workflow](https://github.com/alphagov/govuk-prototype-kit-common-templates/actions/workflows/build-release.yml)`
     )
   }
 

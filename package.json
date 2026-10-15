@@ -12,7 +12,13 @@
   "publishConfig": {
     "access": "public"
   },
+  "scripts": {
+    "postversion": "node scripts/release/update-changelog.js"
+  },
   "peerDependencies": {
     "govuk-frontend": ">=6.0.0"
+  },
+  "devDependencies": {
+    "semver": "^7.7.3"
   }
 }
