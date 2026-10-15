@@ -1,0 +1,29 @@
+name: '[Release] Build release for review'
+run-name: "[Release] Build release for review (${{ join(inputs.*, ', ') }})"
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_type:
+        description: 'Release type'
+        required: true
+        type: choice
+        options:
+          - major
+          - minor
+          - patch
+          - premajor
+          - preminor
+          - prepatch
+          - prerelease
+      preid:
+        description: "Prerelease label (for example: 'beta')"
+        type: string
+
+# Disable top-level permissions, set them per job as needed
+permissions: {}
+
+jobs:
+  build-release:
+    name: Build release
+    runs-on: ubuntu-24.04
