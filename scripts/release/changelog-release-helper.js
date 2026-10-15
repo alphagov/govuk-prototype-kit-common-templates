@@ -60,7 +60,7 @@ function updateChangelog (path, newVersion, previousVersion) {
   } else {
     // Add content on how to install the release
     newLines.push(
-      'You can update to this version from the [Plugins section of Manage your prototype](http://localhost:3000/manage-prototype/plugins) in your prototype.',
+      'You can update to this version from the [Plugins section of Manage your prototype](https://prototype-kit.service.gov.uk/install-and-use-plugins/#updating-plugins) in your prototype.',
       ''
     )
   }
