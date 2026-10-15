@@ -177,18 +177,20 @@ function getChangelogLineIndexes (changelogLines, heading = undefined) {
  * Checks if a version string is a pre-release or not
  *
  * Returns true only if a semver is a pre-release with an identifier and an
- * identifier base, eg:
+ * identifier base. Accepts an optional leading 'v':
  *
  * - 4.0.0 - false
  * - 4.0.0-beta false
  * - 4.0.0-0 false
  * - 4.0.0.beta.0 true
+ * - v4.0.0-beta.0 true
+ * - v4.0.0-0 false
  *
  * @param {string} version
  * @returns {boolean} - If the passed version is a pre-release or not
  */
 function versionIsAPrerelease (version) {
-  return /^\d+\.\d+\.\d+-\D+\.\d+$/i.test(version)
+  return /^v?\d+\.\d+\.\d+-\D+\.\d+$/i.test(version)
 }
 
 /**
