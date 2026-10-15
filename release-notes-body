@@ -1,0 +1,11 @@
+
+You can update to this version from the [Plugins section of Manage your prototype](https://prototype-kit.service.gov.uk/install-and-use-plugins/#updating-plugins) in your prototype.
+
+
+## Breaking changes
+
+### This is a test
+
+We are checking if our new release process correctly updates the changelog.
+
+Pull request generated on behalf of @domoscargin by [run 38761715810](https://github.com/alphagov/govuk-prototype-kit-common-templates/actions/runs/38761715810) of the [Build release workflow](https://github.com/alphagov/govuk-prototype-kit-common-templates/actions/workflows/build-release.yml)

@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+## v4.0.0 (Breaking release)
+
+You can update to this version from the [Plugins section of Manage your prototype](https://prototype-kit.service.gov.uk/install-and-use-plugins/#updating-plugins) in your prototype.
+
+
 ### Breaking changes
 
 #### This is a test
