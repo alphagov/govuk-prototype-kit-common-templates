@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+## v4.0.0 (Breaking release)
+
+You can update to this version from the [Plugins section of Manage your prototype](http://localhost:3000/manage-prototype/plugins) in your prototype.
+
+
 ## 3.0.1
 
 ### Fixes
