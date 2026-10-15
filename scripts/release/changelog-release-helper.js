@@ -87,9 +87,11 @@ function updateChangelog (path, newVersion, previousVersion) {
 function generateReleaseNotes (path, newVersion, options) {
   // Get the identifier from the version if there is one as we'll use this to
   // change what we pass to getChangelogLineIndexes if the version has an
-  // 'internal' tag
-  const identifier = versionIsAPrerelease(newVersion)
-    ? getPrereleaseIdentifier(newVersion)
+  // 'internal' tag. Strip any leading 'v' first (eg when passed a GitHub tag)
+  // as versionIsAPrerelease expects a bare semver.
+  const versionWithoutPrefix = newVersion.replace(/^v/, '')
+  const identifier = versionIsAPrerelease(versionWithoutPrefix)
+    ? getPrereleaseIdentifier(versionWithoutPrefix)
     : undefined
   const changelogLines = readFileLinesSync(path)
   const [startIndex, previousReleaseLineIndex] = getChangelogLineIndexes(
