@@ -1,0 +1,21 @@
+name: '[Release] Publish package to npm'
+run-name: '[Release] Publish package to npm (${{inputs.environment}})'
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: Environment
+        required: true
+        type: choice
+        options:
+          - test
+          - production
+
+# Disable top-level permissions, set them per job as needed
+permissions: {}
+
+jobs:
+  publish:
+    name: Publish to npm
+    runs-on: ubuntu-24.04
