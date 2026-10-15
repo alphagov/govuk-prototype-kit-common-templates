@@ -15,4 +15,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - run: npx govuk-prototype-kit@snapshot validate-plugin
+      - run: npx govuk-prototype-kit@latest validate-plugin
