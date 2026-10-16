@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+## v4.0.0-test.0 (Test release)
+
+> [!WARNING]
+> This is a prerelease. Do not publish prototypes using this version.
+> Use this release to prepare for the changes coming in version `4.0.0`.
+
+To install this version in a prototype, navigate to your prototype folder in a terminal and run:
+
+`npm install @govuk-prototype-kit/common-templates@4.0.0-test.0`
+
+
 ## 3.0.1
 
 ### Fixes

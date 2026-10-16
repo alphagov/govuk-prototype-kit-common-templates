@@ -1,6 +1,6 @@
 {
   "name": "@govuk-prototype-kit/common-templates",
-  "version": "3.0.1",
+  "version": "4.0.0-test.0",
   "description": "Common service page templates for the GOV.UK Prototype Kit",
   "author": "GOV.UK Prototype team, UK Government Digital Service",
   "license": "MIT",
